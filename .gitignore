@@ -167,6 +167,3 @@ cython_debug/
 .ipynb_checkpoints/
 
 _build/
-
-# MyST build outputs
-_build

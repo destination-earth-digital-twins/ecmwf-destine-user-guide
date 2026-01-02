@@ -7,7 +7,7 @@ author: Alice Sartori Monteiro de Barros
 # Force re-execution of notebooks on each build
 # See https://jupyterbook.org/content/execute.html
 execute:
-  execute_notebooks: 'off'
+  execute_notebooks: "off"
   allow_errors: false
 
 # Define the name of the LaTeX output file for PDF builds
@@ -15,15 +15,13 @@ latex:
   latex_documents:
     targetname: book.tex
 
-
 # Information about where the book exists on the web
 repository:
   url: https://github.com/destination-earth-digital-twins/ecmwf-destine-user-guide
   branch: develop
 
-
 parse:
-  myst_enable_extensions:  # default extensions to enable in the myst parser. See https://myst-parser.readthedocs.io/en/latest/using/syntax-optional.html
+  myst_enable_extensions: # default extensions to enable in the myst parser. See https://myst-parser.readthedocs.io/en/latest/using/syntax-optional.html
     - amsmath
     - colon_fence
     - deflist
@@ -35,7 +33,6 @@ parse:
     - smartquotes
     - substitution
 
-
 # sphinx:
 #   extra_extensions:
 #     - sphinxcontrib.bibtex
@@ -45,7 +42,6 @@ parse:
 #       - references.bib
 #     bibtex_reference_style: author_year
 #     html_extra_path: ["img"]
-
 
 # Exclude patterns
 exclude_patterns:
