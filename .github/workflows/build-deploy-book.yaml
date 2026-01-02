@@ -36,6 +36,11 @@ jobs:
     - name: Install dependencies
       run: |
         pip install -r ci/requirements.txt
+    
+    - name: Debug book files
+      run: |
+        ls -la
+
 
     # Build the book
     - name: Build the book
