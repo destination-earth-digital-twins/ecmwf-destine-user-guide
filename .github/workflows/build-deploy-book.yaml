@@ -28,25 +28,20 @@ jobs:
         submodules: 'true'
 
     # Install dependencies
-    - name: Set up Python 3.11
+    - name: Set up Python 3.12
       uses: actions/setup-python@v5
       with:
-        python-version: '3.11'
+        python-version: '3.12'
 
     - name: Install dependencies
       run: |
         pip install -r ci/requirements.txt
     
 
-    - name: Which jupyter-book
-      run: |
-        which jupyter-book
-        jupyter-book --version
-
     # Build the book
     - name: Build the book
       run: |
-        jupyter-book build .
+        jupyter-book build . --debug
 
     - name: Upload build
       if: github.ref == 'refs/heads/develop'
