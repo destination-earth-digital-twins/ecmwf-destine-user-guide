@@ -41,6 +41,10 @@ jobs:
       run: |
         ls -la
 
+    - name: Which jupyter-book
+      run: |
+        which jupyter-book
+        jupyter-book --version
 
     # Build the book
     - name: Build the book
