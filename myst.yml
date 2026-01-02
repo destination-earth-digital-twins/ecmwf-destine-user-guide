@@ -1,3 +1,54 @@
+version: 1
 project:
-  type: book
   title: ECMWF Destine User Guide
+  authors:
+    - name: Alice Sartori Monteiro de Barros
+  exclude:
+    - developer/*
+  github: destination-earth-digital-twins/ecmwf-destine-user-guide
+  exports:
+    - format: pdf
+      template: plain_latex_book
+      output: exports/book.pdf
+  toc:
+    - file: pages/about.md
+    - title: Getting Started
+      children:
+        - file: pages/1_getting_started/1.1_introduction.md
+          title: Destination Earth at ECMWF
+        - file: pages/1_getting_started/1.2_requesting_access_destine_data.md
+          title: Requesting Access to DestinE Data
+        - file: pages/1_getting_started/1.3_preparing_your_environment.md
+          title: Preparing your Environment
+        - file: pages/1_getting_started/1.4_authentication_polytope.md
+          title: Authentication with Polytope
+    - title: Digital Twins Data Portfolio
+      children:
+        - file: pages/2_digitial_twins_data_portfolio/2.1_dt_overview.ipynb
+          title: Overview
+        - file: pages/2_digitial_twins_data_portfolio/2.2_climate_dt.md
+          title: Climate DT
+        - file: pages/2_digitial_twins_data_portfolio/2.3_extremes_dt.md
+          title: Extremes DT
+        - file: pages/2_digitial_twins_data_portfolio/2.4_aqua.md
+          title: Monitoring and Evaluation Framework
+    - title: Retrieving Data with Polytope
+      children:
+        - file: pages/3_retrieving_data_with_polytope/3.1_introduction_polytope.md
+          title: Introduction to Polytope
+        - file: pages/3_retrieving_data_with_polytope/3.2_data_extraction.md
+          title: Data Extraction
+        - file: pages/3_retrieving_data_with_polytope/3.3_request_language_syntax.md
+          title: Request Language Syntax
+        - file: pages/3_retrieving_data_with_polytope/3.4_regridding.md
+          title: Regridding
+    - title: Data Policy and Citation
+      children:
+        - file: pages/5_data_policy_and_citation/data_policy.md
+          title: Data Policy
+        - file: pages/5_data_policy_and_citation/citations.md
+          title: Citations
+site:
+  options:
+    folders: true
+  template: book-theme
