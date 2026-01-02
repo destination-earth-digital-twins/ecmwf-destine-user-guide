@@ -41,7 +41,7 @@ jobs:
     # Build the book
     - name: Build the book
       run: |
-        jupyter-book build . --debug
+        jupyter book build . --debug
 
     - name: Upload build
       if: github.ref == 'refs/heads/develop'
