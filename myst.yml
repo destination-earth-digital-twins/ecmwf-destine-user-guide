@@ -49,6 +49,7 @@ project:
         - file: pages/5_data_policy_and_citation/citations.md
           title: Citations
 site:
+  relative: true
   options:
     folders: true
   template: book-theme
