@@ -1,0 +1,51 @@
+
+version: 1
+project:
+  title: ECMWF Destine User Guide
+  authors:
+    - name: Alice Sartori Monteiro de Barros
+  license: Apache-2.0
+  open_access: true
+  exclude:
+    - developer/*
+  github: destination-earth-digital-twins/ecmwf-destine-user-guide
+  # thebe:
+  #   binder:
+  #     repo: destination-earth-digital-twins/ecmwf-destine-user-guide
+  #     provider: github
+  #     url: https://mybinder.org
+  #     ref: develop
+  exports:
+    - format: pdf
+      template: plain_latex_book
+      output: exports/book.pdf
+  toc:
+    # myst.yml for Jupyter Book 2.x / MyST
+    - file: pages/about.md
+    - file: pages/1_getting_started/1.1_introduction.md
+    - file: pages/1_getting_started/1.2_requesting_access_destine_data.md
+    - file: pages/1_getting_started/1.3_preparing_your_environment.md
+    - file: pages/1_getting_started/1.4_authentication_polytope.md
+    - file: pages/2_digitial_twins_data_portfolio/2.1_dt_overview.md
+    - file: pages/2_digitial_twins_data_portfolio/2.2_climate_dt.md
+    - file: pages/2_digitial_twins_data_portfolio/2.3_extremes_dt.md
+    - file: pages/2_digitial_twins_data_portfolio/2.4_aqua.md
+    - file: pages/3_retrieving_data_with_polytope/3.1_introduction_polytope.md
+    - file: pages/3_retrieving_data_with_polytope/3.2_data_extraction.md
+    - file: pages/3_retrieving_data_with_polytope/3.3_request_language_syntax.md
+    - file: pages/3_retrieving_data_with_polytope/3.4_regridding.md
+    - file: pages/5_data_policy_and_citation/data_policy.md
+    - file: pages/5_data_policy_and_citation/citations.md
+site:
+  options:
+    folders: true
+    # C3S logos
+    # logo: https://climate.copernicus.eu/sites/default/files/2025-03/logoline_c3s.png
+    # logo_dark: https://climate.copernicus.eu/sites/default/files/2025-03/logoline_c3s_neg.png
+    # logo_url: https://climate.copernicus.eu
+    # CAMS logos
+    # logo: https://climate.copernicus.eu/sites/default/files/2025-03/logoline_cams.png
+    # logo_dark: https://climate.copernicus.eu/sites/default/files/2025-03/logoline_cams_neg.png
+    # logo_url: https://atmosphere.copernicus.eu/
+
+  template: book-theme

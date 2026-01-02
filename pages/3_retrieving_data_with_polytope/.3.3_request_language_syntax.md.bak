@@ -59,7 +59,7 @@ Supported feature types include (availability may vary by dataset):
 - Geographic polygons  
 - Point extractions  
 
-:::{note}
+:::{Note}
 Feature extraction requests return **CoverageJSON**, not the GRIB format used in standard requests.
 :::
 
