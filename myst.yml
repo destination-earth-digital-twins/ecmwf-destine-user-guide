@@ -49,7 +49,7 @@ project:
         - file: pages/5_data_policy_and_citation/citations.md
           title: Citations
 site:
-  relative: true
+  url: https://destination-earth-digital-twins.github.io/ecmwf-destine-user-guide
   options:
     folders: true
   template: book-theme
